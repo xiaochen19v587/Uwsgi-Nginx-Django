@@ -59,6 +59,9 @@ socket=127.0.0.1:8881
 chdir=/home/ubuntu/Letu1.0/Travel
 #程序启动文件,通常在本地是通过运行
 wsgi-file=Travel/wsgi.py
+#添加用户组
+uid=www
+gid=www
 #进程个数
 process=4
 #每个进程的线程个数
@@ -67,6 +70,12 @@ threads=1
 pidfile=uwsgi.pid
 #服务的目志文件位置
 daemonize=uwsgi.log
+```
+## **创建用户组,用于启动uwsgi**
+
+```shell
+sudo /usr/sbin/groupadd www
+sudo /usr/sbin/useradd -g www www
 ```
 
 ## **测试uwsgi是否成功**
