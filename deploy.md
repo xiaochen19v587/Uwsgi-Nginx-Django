@@ -73,6 +73,7 @@ daemonize=uwsgi.log
 
 ```python
 # 先注释掉uwsgi.ini文件中socket,打开http=0.0.0.0:8000，启动uwsgi，在本地浏览器访问139.155.80.41:8881
+uwsgi --ini uwsgi.ini
 ```
 
 ## **启动uwsgi，关闭uwsgi**
