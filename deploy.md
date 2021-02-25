@@ -57,7 +57,7 @@ socket=127.0.0.1:8881
 #http=127.0.0.1:8881
 #项目当前工作目录
 chdir=/home/ubuntu/Letu1.0/Travel
-#程序启动文件,,通常在本地是通过运行
+#程序启动文件,通常在本地是通过运行
 wsgi-file=Travel/wsgi.py
 #进程个数
 process=4
